@@ -26,4 +26,6 @@ resource "azurerm_resource_group" "rg" {
   }
 }
 
-
+output "id"{
+value = data.azurerm_resource_group.id
+}
